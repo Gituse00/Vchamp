@@ -1,43 +1,70 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset */
+body, h1, h2, h3, h4, p, ul {
   margin: 0;
   padding: 0;
 }
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header & Navigation */
 header {
-  background: #006666;
-  color: white;
-  padding: 1em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background: #00695c;
+  color: #fff;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+header h1 {
+  margin-bottom: 0.5rem;
 }
 nav a {
-  color: white;
-  margin: 0 10px;
+  color: #fff;
   text-decoration: none;
+  margin: 0 1rem;
 }
-.hero {
-  background: #e0f7f7;
-  padding: 2em;
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+  margin-top: 4rem;
+}
+#hero {
+  background: #e0f2f1;
   text-align: center;
 }
-.intro, section {
-  padding: 2em;
+#services {
+  background: #f9f9f9;
 }
-.cards {
-  display: flex;
-  gap: 1em;
+#about {
+  background: #fff;
 }
-.card {
-  background: #f0f0f0;
-  padding: 1em;
-  flex: 1;
-  text-align: center;
-  border-radius: 5px;
+#contact {
+  background: #f1f8e9;
 }
+
+/* Lists */
+ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+/* Footer */
 footer {
-  background: #333;
-  color: white;
+  background: #00695c;
+  color: #fff;
   text-align: center;
-  padding: 1em;
+  padding: 1rem;
 }
